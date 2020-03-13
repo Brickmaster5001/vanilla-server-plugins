@@ -14,11 +14,3 @@ tag @a[scores={ssData1=1..}] remove ssSleeping
 execute as @e[tag=!ssSleeping,scores={ssData1=0}] at @s run function brickmaster:sleep_to_day/compare_online_sleep
 tag @a[scores={ssData1=0}] add ssSleeping
 #
-
-## ''
-
-#
-
-## ''
-
-#

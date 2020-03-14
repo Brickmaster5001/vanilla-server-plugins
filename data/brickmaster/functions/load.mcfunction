@@ -1,6 +1,6 @@
 ### Objective definitions
-# ssData1 = 'minecraft.time_since_rest | Type ... Tracks Sleeping Players when user value is 0'
-# ssGlobal = 'dummy | Type ... Used to count online players'
+# vspData1 = 'minecraft.time_since_rest | Type ... Tracks Sleeping Players when user value is 0'
+# vspGlobal = 'dummy | Type ... Used to count online players'
 ### Objective definitions
 
 ## Resets displayed scoreboards
@@ -8,15 +8,15 @@ scoreboard objectives setdisplay sidebar
 
 ## Creates scoreboards for sleep_to_day
 scoreboard objectives add vspData1 minecraft.custom:minecraft.time_since_rest {"text":"Sleepers","color":"red"}
-scoreboard objectives add vspGlobal dummy {"text":"ssGlobal Data","color":"yellow"}
+scoreboard objectives add vspGlobal dummy {"text":"vspGlobal Data","color":"yellow"}
 
 # Define default values
-scoreboard players set onlinePlayers ssGlobal 0
-scoreboard players set sleepingPlayers ssGlobal 0
-scoreboard players set nonSleepers ssGlobal 0
-scoreboard players set sleeperMath ssGlobal 0
-scoreboard players set constantOne ssGlobal 1
-scoreboard players set constantTwo ssGlobal 2
+scoreboard players set onlinePlayers vspGlobal 0
+scoreboard players set sleepingPlayers vspGlobal 0
+scoreboard players set nonSleepers vspGlobal 0
+scoreboard players set sleeperMath vspGlobal 0
+scoreboard players set constantOne vspGlobal 1
+scoreboard players set constantTwo vspGlobal 2
 scoreboard players set sleepersNeeded 1
 
 ## Creates scoreboards for set_home

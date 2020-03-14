@@ -15,7 +15,7 @@ scoreboard objectives add vspGlobal dummy {"text":"vspGlobal Data","color":"yell
 #
 
 ## Creates scoreboards for sleep_to_day
-scoreboard objectives add vspData1 minecraft.custom:minecraft.time_since_rest {"text":"Sleepers","color":"red"}
+scoreboard objectives add vspData1 minecraft.custom:minecraft.time_since_rest
 
 # Define default values
 scoreboard players set onlinePlayers vspGlobal 0
@@ -44,7 +44,7 @@ scoreboard objectives add vspPlayerID dummy
 scoreboard objectives add vspMath dummy
 
 # PRNG default values
-scoreboard players set stored vsp_rng2 97826
+scoreboard players set stored vsp_rng2 87
 scoreboard players set stored vsp_rng3 704969959
 scoreboard players set stored vsp_rng4 99999999
 #

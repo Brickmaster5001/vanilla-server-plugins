@@ -1,5 +1,5 @@
 ## 'Player first time join setup | System Manager onTick commands'
-execute as @a[tag=!vspJoinedTrack] at @s run function vsp:generic
+execute as @a[tag=!vspJoinedTrack] at @s run function vsp:generic/player_join
 #
 
 ## 'sleep_to_day | Plugin onTick commands'

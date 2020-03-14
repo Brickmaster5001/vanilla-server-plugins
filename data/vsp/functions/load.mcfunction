@@ -6,13 +6,16 @@
 ## Resets displayed scoreboards
 scoreboard objectives setdisplay sidebar
 
+## Creates Global Variables used by some or all plugins
+scoreboard objectives add vspGlobal dummy {"text":"vspGlobal Data","color":"yellow"}
+#
+
 ## Creates scoreboard for generic
 
 #
 
 ## Creates scoreboards for sleep_to_day
 scoreboard objectives add vspData1 minecraft.custom:minecraft.time_since_rest {"text":"Sleepers","color":"red"}
-scoreboard objectives add vspGlobal dummy {"text":"vspGlobal Data","color":"yellow"}
 
 # Define default values
 scoreboard players set onlinePlayers vspGlobal 0
@@ -25,13 +28,12 @@ scoreboard players set sleepersNeeded 1
 #
 
 ## Creates scoreboards for set_home
-scoreboard objectives add ss
 
 # Tracking objectives
-scoreboard objectives add ssHomeStoreX dummy
-scoreboard objectives add ssHomeStoreY dummy
-scoreboard objectives add ssHomeStoreZ dummy
-scoreboard objectives add ssHomeStoreD dummy
+scoreboard objectives add vspHomeStoreX dummy
+scoreboard objectives add vspHomeStoreY dummy
+scoreboard objectives add vspHomeStoreZ dummy
+scoreboard objectives add vspHomeStoreD dummy
 
 # PRNG objectives
 scoreboard objectives add vsp_rns dummy

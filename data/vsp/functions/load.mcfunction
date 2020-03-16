@@ -55,4 +55,8 @@ scoreboard objectives add vspGraveX dummy
 scoreboard objectives add vspGraveY dummy
 scoreboard objectives add vspGraveZ dummy
 scoreboard objectives add vspGraveDim dummy
+
+# Grave marker id
+scoreboard objectives add vspGraveID dummy
+
 #

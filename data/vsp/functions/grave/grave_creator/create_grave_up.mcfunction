@@ -3,7 +3,7 @@ setblock ~ ~ ~ air destroy
 
 # Creates grave marker armour stand by spawning a leash knot below the player and then spawning the marker at it
 summon leash_knot ~ ~ ~ {Tags:["vsp_grave_center"]}
-execute at @e[tag=vsp_grave_center,sort=nearest,limit=1] run summon armor_stand ~ ~ ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["vsp_grave_marker"]}
+execute at @e[tag=vsp_grave_center,sort=nearest,limit=1] run summon armor_stand ~ ~-0.5 ~ {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["vsp_grave_marker"]}
 kill @e[tag=vsp_grave_center,sort=nearest,limit=1]
 
 # Sets the grace markers vspGraveID to the grave owners vspPlayerID

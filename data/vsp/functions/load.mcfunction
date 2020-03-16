@@ -12,6 +12,18 @@ scoreboard objectives add vspGlobal dummy {"text":"vspGlobal Data","color":"yell
 
 ## Creates scoreboard for generic
 
+# PRNG objectives
+scoreboard objectives add vsp_rns dummy
+scoreboard objectives add vsp_rng2 dummy
+scoreboard objectives add vsp_rng3 dummy
+scoreboard objectives add vsp_rng4 dummy
+scoreboard objectives add vspPlayerID dummy
+scoreboard objectives add vspMath dummy
+
+# PRNG default values
+scoreboard players set stored vsp_rng2 87
+scoreboard players set stored vsp_rng3 704969959
+scoreboard players set stored vsp_rng4 99999999
 #
 
 ## Creates scoreboards for sleep_to_day
@@ -34,17 +46,13 @@ scoreboard objectives add vspHomeStoreX dummy
 scoreboard objectives add vspHomeStoreY dummy
 scoreboard objectives add vspHomeStoreZ dummy
 scoreboard objectives add vspHomeStoreD dummy
+#
 
-# PRNG objectives
-scoreboard objectives add vsp_rns dummy
-scoreboard objectives add vsp_rng2 dummy
-scoreboard objectives add vsp_rng3 dummy
-scoreboard objectives add vsp_rng4 dummy
-scoreboard objectives add vspPlayerID dummy
-scoreboard objectives add vspMath dummy
+##  Creates scoreboards for grave
 
-# PRNG default values
-scoreboard players set stored vsp_rng2 87
-scoreboard players set stored vsp_rng3 704969959
-scoreboard players set stored vsp_rng4 99999999
+# Player XYZ trackers
+scoreboard objectives add vspGraveX dummy
+scoreboard objectives add vspGraveY dummy
+scoreboard objectives add vspGraveZ dummy
+scoreboard objectives add vspGraveDim dummy
 #

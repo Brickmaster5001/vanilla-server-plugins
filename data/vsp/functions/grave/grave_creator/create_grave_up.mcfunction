@@ -10,15 +10,15 @@ scoreboard players operation @e[tag=vsp_grave_marker,limit=1,sort=nearest] vspGr
 execute as @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 command_block{Command:"PlaceHolderCommandVSPFUNCTION"} replace air
 
 # Summons hopper minecarts at the grave marker
-execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
-execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
-execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
-execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
-execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
-execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
-execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
-execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
-execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
+execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
+execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
+execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
+execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
+execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
+execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
+execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
+execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
+execute at @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run summon hopper_minecart ~ ~ ~ {NoGravity:1b,Tags:["vsp_grave_storage"]}
 
 # Replaces command blocks with the 'PlaceHolderCommandVSPFUNCTION' entry in a 3x3 area
 execute as @e[tag=vsp_grave_marker,tag=!vsp_grave_set,sort=nearest,limit=1] at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace command_block{Command:"PlaceHolderCommandVSPFUNCTION"}

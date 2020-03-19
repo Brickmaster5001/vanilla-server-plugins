@@ -16,4 +16,7 @@ execute as @e[tag=vsp_grave_marker] at @s unless block ~ ~1 ~ minecraft:andesite
 # When a grave storage entity that doesn't have the 'vsp_grave_storage_locked' tag
 execute as @e[tag=vsp_grave_storage_locked] at @s run function vsp:grave/grave_handler/lock_grave_wait
 
+# When a players vspDeathTrack score is greater than one run 'vsp:grave/player/on_death'
+execute as @a[scores={vspDeathTrack=1..}] at @s run function vsp:grave/player/on_death
+
 #

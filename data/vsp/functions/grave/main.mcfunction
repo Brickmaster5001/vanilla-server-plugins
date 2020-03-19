@@ -19,4 +19,7 @@ execute as @e[tag=!vsp_grave_storage_locked,tag=vsp_grave_storage_active] at @s 
 # When a players vspDeathTrack score is greater than one run 'vsp:grave/player/on_death'
 execute as @a[scores={vspDeathTrack=1..}] at @s run function vsp:grave/player/on_death
 
+# Runs player nearby grave function when player is within 2 blocks and grave DOESN'T have 'vsp_sent_message'
+execute as @e[tag=vsp_grave_marker_active,tag=!vsp_grave_sent_message] at @s if entity @p[distance=..2] run function vsp:grave/grave_handler/on_player_near
+
 #

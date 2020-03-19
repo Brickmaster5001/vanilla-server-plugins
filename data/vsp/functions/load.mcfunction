@@ -65,4 +65,7 @@ scoreboard objectives add vspGraveLock dummy
 # Added death tracker obj
 scoreboard objectives add vspDeathTrack deathCount
 
+# Adds vspGraveTrigger trigger obj
+scoreboard objectives add vspGraveTrigger trigger
+
 #

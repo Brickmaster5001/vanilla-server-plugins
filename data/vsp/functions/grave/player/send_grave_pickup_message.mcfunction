@@ -1,0 +1,2 @@
+tellraw @s [{"text":">>> ","color":"gray"},{"text":"Click ","color":"yellow"},{"text":"here","color":"green","underlined":true,"hoverEvent":{"action":"show_text","value":[{"text":"Click me to pickup your grave!","color":"gray"}]},"clickEvent":{"action":"run_command","value":"/trigger vspGraveTrigger set 1"}},{"text":" to pickup your grave.","color":"yellow"}]
+playsound minecraft:block.note_block.chime master @s

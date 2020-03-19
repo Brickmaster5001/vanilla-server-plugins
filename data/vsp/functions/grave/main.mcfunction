@@ -20,6 +20,14 @@ execute as @e[tag=!vsp_grave_storage_locked,tag=vsp_grave_storage_active] at @s 
 execute as @a[scores={vspDeathTrack=1..}] at @s run function vsp:grave/player/on_death
 
 # Runs player nearby grave function when player is within 2 blocks and grave DOESN'T have 'vsp_sent_message'
-execute as @e[tag=vsp_grave_marker_active,tag=!vsp_grave_sent_message] at @s if entity @p[distance=..2] run function vsp:grave/grave_handler/on_player_near
+execute as @e[tag=vsp_grave_marker_active,tag=!vsp_grave_sent_message] at @s if entity @p[distance=..3] run function vsp:grave/grave_handler/on_player_near
+
+execute as @e[tag=vsp_grave_marker_active,tag=vsp_grave_sent_message] at @s run function vsp:grave/grave_handler/message_delay
+
+# When a players vspGraveTrigger is set to 1 or greater, run return items function
+execute as @a[scores={vspGraveTrigger=1}] at @s run function vsp:grave/player/return_items
+
+# Actives gravePickup trigger for all players
+scoreboard players enable @a vspGraveTrigger
 
 #

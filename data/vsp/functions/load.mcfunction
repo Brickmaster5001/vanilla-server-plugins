@@ -59,4 +59,7 @@ scoreboard objectives add vspGraveDim dummy
 # Grave marker id
 scoreboard objectives add vspGraveID dummy
 
+# Grave lock cooldown
+scoreboard objectives add vspGraveLock dummy
+
 #

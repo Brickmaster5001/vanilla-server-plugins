@@ -1,19 +1,13 @@
 {
   "values": [
-    "minecraft:chest",
-    "minecraft:barrel",
-    "minecraft:ender_chest",
-    "minecraft:trapped_chest",
-    "minecraft:enchanting_table",
     "minecraft:crafting_table",
     "minecraft:jukebox",
-    "minecraft:end_portal_frame",
     "minecraft:iron_block",
     "minecraft:diamond_block",
     "minecraft:gold_block",
     "minecraft:coal_block",
     "minecraft:spawner",
-    "minecraft:noteblock",
+    "minecraft:note_block",
     "minecraft:hopper",
     "minecraft:dropper",
     "minecraft:dispenser",
@@ -28,13 +22,14 @@
     "minecraft:blast_furnace",
     "minecraft:cartography_table",
     "minecraft:fletching_table",
-    "minecraft:grindstone",
     "minecraft:smithing_table",
-    "minecraft:stonecutter",
     "minecraft:bell",
     "minecraft:bee_nest",
     "minecraft:beehive",
     "minecraft:barrier",
-    "minecraft:furnace"
+    "minecraft:furnace",
+    "minecraft:chain_command_block",
+    "minecraft:repeating_command_block",
+    "minecraft:command_block"
   ]
 }

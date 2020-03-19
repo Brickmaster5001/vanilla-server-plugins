@@ -62,4 +62,7 @@ scoreboard objectives add vspGraveID dummy
 # Grave lock cooldown
 scoreboard objectives add vspGraveLock dummy
 
+# Added death tracker obj
+scoreboard objectives add vspDeathTrack deathCount
+
 #

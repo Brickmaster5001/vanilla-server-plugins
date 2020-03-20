@@ -24,6 +24,9 @@ execute as @a[scores={vspGraveTrigger=1}] at @s run function vsp:grave/player/re
 # Actives gravePickup trigger for all players
 scoreboard players enable @a vspGraveTrigger
 
+# If player has at least one vspGraveTrigger score run check
+execute as @a[scores={vspGraveTrigger=1..}] at @s run function vsp:grave/player/in_range
+
 # Adds 1 to all loaded graves vspGraveLife obj when it reaches
 scoreboard players add @e[tag=vsp_grave_marker_active] vspGraveLife 1
 execute as @e[tag=vsp_grave_marker_active,scores={vspGraveLife=1728000..}] at @s run function vsp:grave/grave_handler/kill_grave.mcfunction

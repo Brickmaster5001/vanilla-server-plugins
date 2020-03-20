@@ -75,4 +75,7 @@ scoreboard objectives add vspGraveIDMatch dummy
 # Grave vspMessageDelay
 scoreboard objectives add vspMessageDelay dummy
 
+# vspGraveLife
+scoreboard objectives add vspGraveLife dummy
+
 #

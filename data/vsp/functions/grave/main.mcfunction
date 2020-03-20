@@ -1,11 +1,5 @@
 ## 'grave | Plugin onTick commands'
 
-# Constantly updates players dimension and XYZ data
-execute as @a at @s store result score @s vspGraveX run data get entity @s Pos[0]
-execute as @a at @s store result score @s vspGraveY run data get entity @s Pos[1]
-execute as @a at @s store result score @s vspGraveZ run data get entity @s Pos[2]
-execute as @a at @s store result score @s vspGraveDim run data get entity @s Dimension
-
 # Removes all rail type blocks from below any graves to prevent minecart stealing
 execute as @e[tag=vsp_grave_marker] at @s if block ~ ~-1 ~ #vsp:rail_blocks run setblock ~ ~-1 ~ air destroy
 
@@ -29,5 +23,9 @@ execute as @a[scores={vspGraveTrigger=1}] at @s run function vsp:grave/player/re
 
 # Actives gravePickup trigger for all players
 scoreboard players enable @a vspGraveTrigger
+
+# Adds 1 to all loaded graves vspGraveLife obj when it reaches
+scoreboard players add @e[tag=vsp_grave_marker_active] vspGraveLife 1
+execute as @e[tag=vsp_grave_marker_active,scores={vspGraveLife=1728000..}] at @s run function vsp:grave/grave_handler/kill_grave.mcfunction
 
 #

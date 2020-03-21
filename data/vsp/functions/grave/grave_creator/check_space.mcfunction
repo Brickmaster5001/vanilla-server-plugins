@@ -1,3 +1,6 @@
+# Sets players vspGravePDelay to 150 ticks
+scoreboard players set @s vspGravePDelay 150
+
 # Stores XYZ and Dimension location of player
 execute as @s at @s store result score @s vspGraveX run data get entity @s Pos[0]
 execute as @s at @s store result score @s vspGraveY run data get entity @s Pos[1]

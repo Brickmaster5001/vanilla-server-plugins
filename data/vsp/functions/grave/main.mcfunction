@@ -29,6 +29,11 @@ execute as @a[scores={vspGraveTrigger=1..}] at @s run function vsp:grave/player/
 
 # Adds 1 to all loaded graves vspGraveLife obj when it reaches
 scoreboard players add @e[tag=vsp_grave_marker_active] vspGraveLife 1
-execute as @e[tag=vsp_grave_marker_active,scores={vspGraveLife=1728000..}] at @s run function vsp:grave/grave_handler/kill_grave.mcfunction
+execute as @e[tag=vsp_grave_marker_active,scores={vspGraveLife=900000..}] at @s run function vsp:grave/grave_handler/kill_grave.mcfunction
+
+scoreboard players remove @a[scores={vspGravePDelay=1..}] vspGravePDelay 1
+tag @a remove vsp_grave_message_delay
+tag @a[scores={vspGravePDelay=1..}] add vsp_grave_message_delay
+
 
 #
